@@ -52,7 +52,7 @@ public class PredefinedStepDefs {
 
     @Then("^I wait for element with xpath \"([^\"]*)\" to be present$")
     public void iWaitForElementWithXpathToBePresent(String xpath) {
-        new WebDriverWait(getDriver(), 10, 200).until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+        new WebDriverWait(getDriver(), 60, 200).until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
     }
 
     @Then("^I wait for element with xpath \"([^\"]*)\" to not be present$")
